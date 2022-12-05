@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+    <div class="logo"></div>
+    <div class="logo1"></div>
+    <div class="logo2"></div>
+    <div class="logo3"></div>
+</div>
+</body>
+
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .logo{
+        background-image: url(teclado.jpg);
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10%;
+        background-size: cover;
+    }
+
+    .logo1{
+        background-image: url(teclado.jpg);
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10%;
+        background-size: cover;
+    }
+
+    .logo2{
+        background-image: url(teclado.jpg);
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10%;
+        background-size: cover;
+    }
+
+    .logo3{
+        background-image: url(teclado.jpg);
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10%;
+        background-size: cover;
+    }
+
+    .logo::after{
+        content: 'Front-end';
+        font-size: 3rem;
+        color:white;
+        font-family: poppins;
+        background-color: gray;
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        transform: translateY(100%);
+        transition: 0.4s;
+        opacity: 80%;
+    }
+
+    .logo:hover::after{
+        transform: translateY(0);
+    }
+
+    .logo1::after{
+        content: 'Front-end';
+        font-size: 3rem;
+        color:white;
+        font-family: poppins;
+        background-color: gray;
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        transform: translateY(100%);
+        transition: 0.4s;
+        opacity: 80%;
+    }
+
+    .logo1:hover::after{
+        transform: translateY(0);
+    }
+
+    .logo2::after{
+        content: 'Front-end';
+        font-size: 3rem;
+        color:white;
+        font-family: poppins;
+        background-color: gray;
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        transform: translateY(100%);
+        transition: 0.4s;
+        opacity: 80%;
+    }
+
+    .logo2:hover::after{
+        transform: translateY(0);
+    }
+
+    .logo3::after{
+        content: 'Front-end';
+        font-size: 3rem;
+        color:white;
+        font-family: poppins;
+        background-color: gray;
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        transform: translateY(100%);
+        transition: 0.4s;
+        opacity: 80%;
+    }
+
+    .logo3:hover::after{
+        transform: translateY(0);
+    }
+
+</style>
+
+</html>

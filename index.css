@@ -1,0 +1,584 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: lydian, sans-serif;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    margin: 0px;
+    /* background: linear-gradient(to right, #360033, #0b8793); */
+    background: linear-gradient(to right, #360033 , #000   );
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0, 0.5 );
+    box-shadow: 2px 2px 10px rgb(0 , 0, 0, 0.5);
+    color: white;
+    background: linear-gradient(to right, #360033 , #202122   );
+}
+
+button:hover{
+    background: #660066  ;
+    border: solid 1px #a000a0 ;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: #a000a0;}
+
+header{
+    background: linear-gradient(to right, #360033, #000);
+}
+
+header .logo-head{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.9em;
+    font-family: lydian, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #cccccc ;
+}
+
+header a:hover{
+    color: #a000a0;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image:linear-gradient(
+        0deg, 
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ) 
+    ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    font-size: 40px;
+}
+
+#hero button{
+    font-size: 1.6em;
+}
+
+#mi-historia .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+.logo-km{
+    height: 70px;
+}
+
+.icon-2{
+    height: 20px;
+    padding: 1px 10px;
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#nuestros-programas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 100px 0;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover; 
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg, 
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ) 
+    ,url("media/front-end.jpg");
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg, 
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ) 
+    ,url("media/full-stack.jpg");    
+}
+
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg, 
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ) 
+    ,url("media/imagen11.jpg"); 
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+#caracteristicas li{
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+#final h2{
+    font-size: 9;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background: #360033;
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjetas con Hover informativo */
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logo{
+    background-image: url(media/figma-portafolio.png);
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.logo1{
+    background-image: url(media/figma1.png);
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.logo2{
+    background-image: url(media/figma2.png);
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.logo3{
+    background-image: url(media/figma3.png);
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.logo::after{
+    content: 'Esta caratula muestra gran parte de mí y del camino que quiero trazar.';
+    font-size: 1rem;
+    color:white;
+    font-family: poppins;
+    background-color: gray;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: 0.4s;
+    opacity: 80%;
+}
+
+.logo:hover::after{
+    transform: translateY(0);
+}
+
+.logo1::after{
+    content: 'El Proyecto Lety empezo como parte de una actividad extracurricular para poner a prueba un poco de lo aprendido en la ingenieria, pero entre mas avanzaba, mas me convencia que no solo era una practica si no un proyecto en el que queria trabajar';
+    font-size:0.8rem;
+    color:white;
+    font-family: poppins;
+    background-color: gray;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: 0.4s;
+    opacity: 80%;
+}
+
+.logo1:hover::after{
+    transform: translateY(0);
+}
+
+.logo2::after{
+    content: 'Este trabajo es una actividada realizada en el 8° tetramestre de la ingenieria. Este trabajo es sencillo pero me ayudo a decidir el rumbo que queria tomar.';
+    font-size:1rem ;
+    color:white;
+    font-family: poppins;
+    background-color: gray;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: 0.4s;
+    opacity: 80%;
+}
+
+.logo2:hover::after{
+    transform: translateY(0);
+}
+
+.logo3::after{
+    content: 'Uno de mis primeros prototipos creados de manera profecional en la cual se realizo el prototipo de una app de prestamo de nomina';
+    font-size: 1rem;
+    color:white;
+    font-family: poppins;
+    background-color: gray;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: 0.4s;
+    opacity: 80%;
+}
+
+.logo3:hover::after{
+    transform: translateY(0);
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #hero h1{
+        font-size: 4em;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    #somos-proya h2{
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container{
+        background-image: url("media/imagen2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    #mi-historia .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #mi-historia .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    #mi-historia h2{
+        margin-top: 0px;
+        color: #fff !important;
+    }
+
+    #mi-historia .img-container2{
+        background-image: url("media/imagen1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    #nuestros-programas{
+        background-color: transparent;
+        
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: transparent;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .carta:first-child{
+        background-image:linear-gradient(
+            0deg, 
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ) 
+        ,url("media/imagen12.jpg");
+    }
+    
+    .carta:nth-child(2){
+        background-image:linear-gradient(
+            0deg, 
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ) 
+        ,url("media/imagen10.jpg");    
+    }
+    
+    .carta:nth-child(3){
+        background-image:linear-gradient(
+            0deg, 
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ) 
+        ,url("media/imagen11-1.jpg"); 
+    }
+
+    #caracteristicas{
+        background-image: url("media/imagen5.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+        
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    #final .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 720px){
+    #somos-proya .texto{      
+        color: white;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #mi-historia .texto{
+        color: white;
+    }
+
+    p{
+        font-size: unset;
+        padding: 5px;
+    }
+
+    #nuestros-programas{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: transparent;
+        
+}
+
+.logo, .logo1, .logo2, .logo3{
+    margin: 20px;
+}
+
+nav{
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-head{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1200px){
+    #caracteristicas{
+        background-position-x:calc(100vw - 800px);
+    }
+}
+}
