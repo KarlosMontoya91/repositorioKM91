@@ -510,6 +510,7 @@ footer .container{
     }
 
     #nuestros-programas .carta{
+        width: -webkit-fill-available;
         padding: 50px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
